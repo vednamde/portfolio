@@ -1,0 +1,50 @@
+Project File Structure for ved-portfolio
+========================================
+
+Root Directory: c:/Users/vedna/Documents/portfolio/ved-portfolio
+
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.cjs
+├── README.md
+├── tailwind.config.js
+├── TODO.md
+├── vite.config.js
+├── public/
+│   ├── vite.svg
+│   └── media/
+│       ├── bg-tech.mp4
+│       ├── bg-tech1.mp4
+│       ├── bg-tech2.mp4
+│       ├── bg-tech3.mp4
+│       ├── bg-tech4.mp4
+│       ├── cake_management.mp4
+│       ├── finguard.mp4
+│       ├── joi.mp4
+│       ├── market price.png
+│       ├── profile.jpg
+│       ├── Resume.pdf
+│       ├── watchlistify.mp4
+│       └── adr/
+│           ├── adr1.png
+│           ├── adr2.png
+│           ├── adr3.png
+│           └── adr4.png
+└── src/
+    ├── App.css
+    ├── App.jsx
+    ├── index.css
+    ├── main.jsx
+    ├── assets/
+    │   └── react.svg
+    └── components/
+        ├── AnimatedCounter.jsx
+        ├── Button.jsx
+        ├── Hero.jsx
+        ├── MagneticButton.jsx
+        ├── MediaModal.jsx
+        ├── Navbar.jsx
+        └── ProjectCard.jsx
