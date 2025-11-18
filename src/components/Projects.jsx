@@ -56,19 +56,10 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="relative py-28 bg-transparent overflow-hidden z-10">
-      {/* Particles Background */}
-      <Particles
-        className="absolute inset-0 z-0"
-        particleColors={['#ffffff', '#ffffff']}
-        particleCount={200}
-        particleSpread={10}
-        speed={0.1}
-        particleBaseSize={100}
-        moveParticlesOnHover={true}
-        alphaParticles={false}
-        disableRotation={false}
-      />
+    <section
+      id="projects"
+      className="relative py-28 overflow-visible bg-transparent z-10"
+    >
 
       {/* Soft glows */}
       <div className="absolute inset-0">
@@ -101,7 +92,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      <div className="absolute bottom-0 w-full h-[2px] bg-gradient-to-r from-[#6EE7F9]/40 via-[#C084FC]/40 to-[#F472B6]/40 blur-[2px] animate-pulse"></div>
+      {/* <div className="absolute bottom-0 w-full h-[2px] bg-gradient-to-r from-[#6EE7F9]/40 via-[#C084FC]/40 to-[#F472B6]/40 blur-[2px] animate-pulse"></div> */}
     </section>
   );
 }

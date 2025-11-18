@@ -7,4 +7,5 @@
   z-index: -1; /* Ensures it stays behind your profile content */
   overflow: hidden;
   touch-action: none;
+  background: #05060B !important;
 }

@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Mail, Github, Linkedin } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6"; // X (Twitter) icon
-import ColorBends from './ColorBends';
+// import ColorBends from './ColorBends';
+import Particles from "./Particles";
 
 export default function Contact() {
   const contacts = [
@@ -35,23 +36,8 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-28 bg-transparent overflow-hidden z-10"
+      className="relative py-28 overflow-visible bg-transparent z-10"
     >
-      {/* Color Blend Background */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        <ColorBends
-          colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
-          rotation={30}
-          speed={0.3}
-          scale={1.4}
-          frequency={1.5}
-          warpStrength={1.2}
-          mouseInfluence={0.8}
-          parallax={0.6}
-          noise={0.08}
-          transparent
-        />
-      </div>
 
       {/* Glow Lights */}
       <div className="absolute inset-0 z-[1] pointer-events-none">
@@ -130,7 +116,7 @@ export default function Contact() {
           </a>
         </motion.div>
       </div>
-      <div className="absolute bottom-0 w-full h-[2px] bg-gradient-to-r from-[#6EE7F9]/40 via-[#C084FC]/40 to-[#F472B6]/40 blur-[2px] animate-pulse"></div>
+      {/* <div className="absolute bottom-0 w-full h-[2px] bg-gradient-to-r from-[#6EE7F9]/40 via-[#C084FC]/40 to-[#F472B6]/40 blur-[2px] animate-pulse"></div> */}
     </section>
   );
 }
