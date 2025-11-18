@@ -35,7 +35,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-28 bg-[#0B0C10]/70 overflow-hidden"
+      className="relative py-28 bg-transparent overflow-hidden z-10"
     >
       {/* Color Blend Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">

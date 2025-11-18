@@ -22,7 +22,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-gradient-to-b from-[#0B0C10] via-[#0E1118] to-[#0B0C10] text-gray-400 py-10 border-t border-white/10">
+    <footer className="relative bg-transparent text-gray-400 py-10 border-t border-white/10 z-10">
       {/* === Animated Glow Background === */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_120%,rgba(192,132,252,0.1),transparent_60%)]" />
 

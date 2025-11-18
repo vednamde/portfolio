@@ -56,7 +56,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="relative py-28 bg-[#0F111A] overflow-hidden">
+    <section id="projects" className="relative py-28 bg-transparent overflow-hidden z-10">
       {/* Particles Background */}
       <Particles
         className="absolute inset-0 z-0"

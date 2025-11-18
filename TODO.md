@@ -1,9 +1,7 @@
-# TODO: Fix ColorBends Visibility in Contact.jsx
-
-## Tasks
-- [x] Update Contact.jsx section background to semi-transparent
-- [x] Wrap ColorBends in absolute positioned div with z-0 and pointer-events-none
-- [x] Update ColorBends props: scale to 1.4, frequency to 1.5
-- [x] Add pointer-events-none to background lights div
-- [x] Update ColorBends.css to add pointer-events: none to .color-bends-container
-- [x] Run development server and verify ColorBends is visible
+- [x] Update src/index.css with height styles for html, body, #root and #global-bg CSS
+- [x] Replace src/main.jsx with the quick fix code
+- [x] Add z-10 to section in src/components/Hero.jsx
+- [x] Add z-10 to section in src/components/About.jsx
+- [x] Add z-10 to section in src/components/Projects.jsx
+- [x] Add z-10 to section in src/components/Contact.jsx
+- [x] Add z-10 to footer in src/components/Footer.jsx

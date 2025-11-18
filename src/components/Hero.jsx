@@ -6,28 +6,9 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-[#0B0C10] pt-28 pb-40"
+      className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-transparent pt-28 pb-40 z-10"
     >
-      {/* ====== BACKGROUND EFFECT ====== */}
-      <div className="absolute inset-0 z-0">
-        <LiquidEther
-          colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
-          mouseForce={20}
-          cursorSize={100}
-          isViscous={false}
-          viscous={30}
-          iterationsViscous={32}
-          iterationsPoisson={32}
-          resolution={0.5}
-          isBounce={false}
-          autoDemo={true}
-          autoSpeed={0.5}
-          autoIntensity={2.2}
-          takeoverDuration={0.25}
-          autoResumeDelay={3000}
-          autoRampDuration={0.6}
-        />
-      </div>
+
 
 
 
@@ -105,7 +86,7 @@ export default function Hero() {
       </motion.div>
 
       {/* ======= Subtle Glow Line ======= */}
-      <div className="absolute bottom-0 w-full h-[2px] bg-gradient-to-r from-[#6EE7F9]/40 via-[#C084FC]/40 to-[#F472B6]/40 blur-[2px] animate-pulse"></div>
+      {/* <div className="absolute bottom-0 w-full h-[2px] bg-gradient-to-r from-[#6EE7F9]/40 via-[#C084FC]/40 to-[#F472B6]/40 blur-[2px] animate-pulse"></div> */}
     </section>
   );
 }

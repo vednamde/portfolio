@@ -11,8 +11,9 @@ import {
   SiGithub,
 } from "react-icons/si";
 import { FaBrain, FaChartLine, FaChartBar } from "react-icons/fa";
-import LightRays from "./LightRays";
-import "./LightRays.css";
+// import LightRays from "./LightRays";
+import LiquidEther from "./LiquidEther";
+// import "./LightRays.css";
 
 export default function About() {
   const skills = [
@@ -30,9 +31,9 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-28 text-center overflow-hidden bg-transparent"
+      className="relative py-28 text-center overflow-hidden bg-transparent pt-28 pb-40 z-10"
     >
-      {/* LIGHT RAYS BACKGROUND */}
+      {/* LIGHT RAYS BACKGROUND
       <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.6]">
         <LightRays
           raysOrigin="top-center"
@@ -45,13 +46,10 @@ export default function About() {
           noiseAmount={0.1}
           distortion={0.05}
         />
-      </div>
+      </div> */}
 
-      {/* GRADIENT GLOW BEHIND RAYS */}
-      <div className="absolute inset-0 z-[-1]">
-        <div className="absolute w-[600px] h-[600px] bg-[#6EE7F9]/10 blur-[200px] top-[-100px] left-[-100px]" />
-        <div className="absolute w-[600px] h-[600px] bg-[#C084FC]/10 blur-[200px] bottom-[-100px] right-[-100px]" />
-      </div>
+
+
 
       {/* CONTENT (z-index 10 so it stays on top) */}
       <div className="relative z-10">
