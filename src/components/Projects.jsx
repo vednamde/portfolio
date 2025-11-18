@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
+import Particles from "./Particles";
 
 export default function Projects() {
   const projects = [
@@ -56,6 +57,19 @@ export default function Projects() {
 
   return (
     <section id="projects" className="relative py-28 bg-[#0F111A] overflow-hidden">
+      {/* Particles Background */}
+      <Particles
+        className="absolute inset-0 z-0"
+        particleColors={['#ffffff', '#ffffff']}
+        particleCount={200}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover={true}
+        alphaParticles={false}
+        disableRotation={false}
+      />
+
       {/* Soft glows */}
       <div className="absolute inset-0">
         <div className="absolute w-[800px] h-[800px] bg-[#6EE7F9]/10 rounded-full blur-[250px] top-[-200px] left-[-250px]" />
@@ -87,6 +101,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
+      <div className="absolute bottom-0 w-full h-[2px] bg-gradient-to-r from-[#6EE7F9]/40 via-[#C084FC]/40 to-[#F472B6]/40 blur-[2px] animate-pulse"></div>
     </section>
   );
 }

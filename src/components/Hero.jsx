@@ -1,26 +1,33 @@
 import React from "react";
 import { motion } from "framer-motion";
+import LiquidEther from "./LiquidEther";
 
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-black"
+      className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-[#0B0C10] pt-28 pb-40"
     >
-      {/* ======= Background Video ======= */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        loading="lazy"
-        className="absolute inset-0 w-full h-full object-cover opacity-60 -z-10"
-      >
-        <source src="/media/bg-tech.mp4" type="video/mp4" />
-      </video>
-
-      {/* ======= Overlay (for better text visibility) ======= */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-[#0B0C10]/80 to-black/90 -z-10"></div>
+      {/* ====== BACKGROUND EFFECT ====== */}
+      <div className="absolute inset-0 z-0">
+        <LiquidEther
+          colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
+          mouseForce={20}
+          cursorSize={100}
+          isViscous={false}
+          viscous={30}
+          iterationsViscous={32}
+          iterationsPoisson={32}
+          resolution={0.5}
+          isBounce={false}
+          autoDemo={true}
+          autoSpeed={0.5}
+          autoIntensity={2.2}
+          takeoverDuration={0.25}
+          autoResumeDelay={3000}
+          autoRampDuration={0.6}
+        />
+      </div>
 
 
 
